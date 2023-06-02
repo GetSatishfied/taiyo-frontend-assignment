@@ -29,9 +29,9 @@ const App: React.FC = () => {
       <div>
         <Sidebar activeLink={activeLink} />
         <Routes>
-          <Route path="/taiyo-frontend-assignment" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
-          <Route path="/taiyo-frontend-assignment/contacts" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
-          <Route path="/taiyo-frontend-assignment/charts-and-maps" element={<ChartsAndMapsPage />} />
+          <Route path="/" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
+          <Route path="/contacts" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
+          <Route path="/charts-and-maps" element={<ChartsAndMapsPage />} />
         </Routes>
       </div>
     </HashRouter>
