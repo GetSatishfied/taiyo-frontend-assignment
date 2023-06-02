@@ -30,6 +30,7 @@ const App: React.FC = () => {
         <Sidebar activeLink={activeLink} />
         <Routes>
           <Route path="/" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
+          <Route path="/taiyo-frontend-assignment" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
           <Route path="/contacts" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
           <Route path="/charts-and-maps" element={<ChartsAndMapsPage />} />
         </Routes>
