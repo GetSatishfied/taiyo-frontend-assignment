@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidenav";
 import ContactForm from "./components/ContactForm";
 import ChartsAndMapsPage from "./components/ChartsAndMapsPage";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { useQuery } from "react-query";
 import axios from "axios";
 
@@ -25,17 +25,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Sidebar activeLink={activeLink} />
         <Routes>
           <Route path="/" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
-          <Route path="/taiyo-frontend-assignment" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
           <Route path="/contacts" element={<ContactForm contacts={contacts} onCreateContact={handleCreateContact}/>} />
           <Route path="/charts-and-maps" element={<ChartsAndMapsPage />} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
