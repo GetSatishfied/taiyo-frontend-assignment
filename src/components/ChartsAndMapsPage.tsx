@@ -2,11 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import { useQuery } from 'react-query';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-import Chart, { ChartConfiguration, ChartData, LineController, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js/auto';
+import Chart, { ChartData, LineController, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js/auto';
 import '../styles/ChartsAndMapsPage.css';
 import "leaflet/dist/leaflet.css"
-// import marker from "./marker.svg"
 Chart.register(LineController, CategoryScale, LinearScale, PointElement, LineElement, Title);
 
 const fetchWorldData = async () => {
