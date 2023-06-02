@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Contact Management App 
+This is an app to manage contacts (add, view, edit, delete).  The webflow is as follows:
+- User lands on the contacts page. User can use the sidebar to navigate between contacts page and charts page.
+- In the contacts page, if no contacts are found in the server, the user sees a message which tells them that no contact is found.
+- When the user clicks on the "Add New Contact" button, they see a dialog box which has a form to add new contact.
+- Upon adding, the card is updated in real time in which there is a View button.
+- Upon clicking the View button, the form opens in Edit mode.
+- If the user makes changes and clicks on the "Save" button, the contact is updated. The other option beside Save is Delete.
+- Upon navigating to the Charts and Maps page, the user can see a list of Worldwide Covid cases and a line chart corresponding to that.
+- Beneath which there is a Leaflet map with markers which are clickable upon which they open a popup which displays the country wise covid details.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Technologies used: 
+- React
+- TypeScript
+- TailwindCSS
+- Redux
+- React Query AKA TanStack Query
+- React Leaflet
+- ChartJS
+- Material UI for React
+- React Router v6
