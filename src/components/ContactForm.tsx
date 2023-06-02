@@ -69,7 +69,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contacts, onCreateContact }) 
     const handleAddContact = async () => {
         if (!isValidEmail(email)) {
             return; // Stop the submission if the email is invalid
-          }
+        }
         const newContact = { name, email, phone, activity };
         try {
             const response = await axios.post('https://taiyo-ai-server.onrender.com/contacts', newContact);
@@ -129,7 +129,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contacts, onCreateContact }) 
         // Basic email validation using a regular expression
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
-      }
+    }
 
     return (
         <div>
@@ -250,7 +250,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contacts, onCreateContact }) 
                     <Button onClick={handleAddContact}>Add Contact</Button>
                 </DialogActions>
             </Dialog>
-            {Array.isArray(contacts) && (
+            {Array.isArray(contacts) && contacts.length > 0 ? (
                 <div>
                     <div className="cards-container flex">
                         {contacts.map((contact: Contact) => (
@@ -372,6 +372,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ contacts, onCreateContact }) 
                         </Modal>
 
                     </div>
+                </div>
+            ) : (
+                <div>
+                    <p>No contacts found.</p>
+                    <p>Please click the "Add New Contact" button to proceed with adding contacts.</p>
                 </div>
             )}
         </div>
