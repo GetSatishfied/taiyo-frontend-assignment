@@ -9,7 +9,7 @@ This is an app to manage contacts (add, view, edit, delete).  The webflow is as 
 - Upon navigating to the Charts and Maps page, the user can see a list of Worldwide Covid cases and a line chart corresponding to that.
 - Beneath which there is a Leaflet map with markers which are clickable upon which they open a popup which displays the country wise covid details.
 
-#Technologies used: 
+# Technologies used: 
 - React
 - TypeScript
 - TailwindCSS
