@@ -19,7 +19,6 @@
     "@types/react-query": "^1.2.9",
     "axios": "^1.4.0",
     "chart.js": "^4.3.0",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
@@ -31,7 +30,10 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://your-username.github.io/taiyo-frontend-assignment/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -56,6 +58,7 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.3"
+    "@types/leaflet": "^1.9.3",
+    "gh-pages": "^5.0.0"
   }
 }
