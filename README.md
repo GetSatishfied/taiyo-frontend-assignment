@@ -1,5 +1,5 @@
 # Contact Management App 
-This is an app to manage contacts (add, view, edit, delete).  The webflow is as follows:
+This is an app to manage contacts (add, view, edit, delete).  The flow of the webapp is as follows:
 - User lands on the contacts page. User can use the sidebar to navigate between contacts page and charts page.
 - In the contacts page, if no contacts are found in the server, the user sees a message which tells them that no contact is found.
 - When the user clicks on the "Add New Contact" button, they see a dialog box which has a form to add new contact.
